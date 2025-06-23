@@ -23,8 +23,7 @@ class _EditPageState extends State<EditPage> {
   }
 
   @override
-  Widget build(BuildContext context) {
-    // Data Fetch nhi ho rha hai ?
+  Widget build(BuildContext context) {3
     final state = context.watch<NotesViewBloc>().state;
     if (state.editData.isNotEmpty) {
       editNoteTitle.text = state.editData[0][DBHelper.columnNoteTitle] ?? '';
